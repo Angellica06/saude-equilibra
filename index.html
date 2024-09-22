@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde Equilibra</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Saúde Equilibra</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#alimentacao">Alimentação</a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a class="nav-link" href="#imc">Calculadora de IMC</a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <a class="nav-link" href="#saude-mental">Saúde Mental</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio">
+        <h1>Viva bem, viva saudável.</h1>
+    </section>
+
+    <section id="alimentacao" class="alimentacao"></section>
+    <div class="container-alimentacao">
+        <h2 class="titulo">Alimentos Saudáveis</h2>
+        <p>Alimentos saudáveis são essenciais para uma vida equilibrada e cheia de energia. Aqui estão alguns dos grupos
+            de alimentos que você deve incluir em sua dieta:</p>
+
+        <h3 class="titulo">Frutas e Vegetais</h3>
+        <p>Ricos em vitaminas, minerais e fibras, as frutas e vegetais devem compor uma parte significativa de sua
+            alimentação. Opte por variedades coloridas para obter uma ampla gama de nutrientes.</p>
+
+        <h3 class="titulo">Grãos Integrais</h3>
+        <p>Alimentos como arroz integral, quinoa e aveia são ótimas fontes de carboidratos complexos, que fornecem
+            energia e ajudam na digestão.</p>
+
+        <h3 class="titulo">Proteínas Magras</h3>
+        <p>Inclua fontes de proteínas magras, como peito de frango, peixe, legumes e tofu, para construir e reparar
+            tecidos no corpo.</p>
+
+        <h3 class="titulo">Gorduras Saudáveis</h3>
+        <p>Opte por gorduras saudáveis, como abacate, nozes e azeite de oliva, que são importantes para a saúde do
+            coração e ajudam na absorção de vitaminas.</p>
+
+        <h3 class="titulo">Hidratação</h3>
+        <p>Não se esqueça de beber bastante água! A hidratação é fundamental para manter o corpo funcionando
+            corretamente.</p>
+    </div>
+    </section>
+
+    <section id="imc">
+        <div class="container-imc">
+            <div class="input-area">
+                <h2>Altura(cm):</h2>
+                <input id="altura" type="number" placeholder="Ex.:1,70">
+            </div>
+            <div class="input-area">
+                <h2>Peso(kg):</h2>
+                <input id="peso" type="number" placeholder="Ex.:68,5">
+            </div>
+            <button onclick="imc()" id="calcular" class="calculate-btn">Calcular</button>
+            <div class="result" id="resultado"></div>
+        </div>
+    </section>
+
+    <section id="saude-mental" class="saude-mental"></section>
+    <div class="container-saude-mental">
+        <h2 class="titulo">Saúde Mental</h2>
+        <p>A saúde mental é tão importante quanto a saúde física. Cuidar da mente é essencial para uma vida
+            equilibrada e feliz. Aqui estão algumas práticas que podem ajudar:</p>
+
+        <h3 class="titulo">Pratique a Atenção Plena</h3>
+        <p>A atenção plena (mindfulness) ajuda a manter o foco no presente, reduzindo a ansiedade e melhorando o
+            bem-estar.</p>
+
+        <h3 class="titulo">Mantenha Conexões Sociais</h3>
+        <p>Manter relacionamentos saudáveis é fundamental. Conversar e passar tempo com amigos e familiares traz
+            apoio emocional.</p>
+
+        <h3 class="titulo">Exercite-se Regularmente</h3>
+        <p>Exercícios físicos liberam endorfinas, que melhoram o humor e reduzem o estresse. Tente incluir
+            atividades físicas na sua rotina.</p>
+
+        <h3 class="titulo">Estabeleça Rotinas</h3>
+        <p>Ter uma rotina pode proporcionar uma sensação de estabilidade e segurança, ajudando a gerenciar melhor o
+            tempo e as responsabilidades.</p>
+
+        <h3 class="titulo">Busque Ajuda Profissional</h3>
+        <p>Não hesite em procurar um profissional se sentir que precisa de suporte. A terapia é uma ferramenta
+            valiosa para o autoconhecimento e a resolução de problemas.</p>
+    </div>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Angélica Anjos.</p>
+    </footer>
+</body>
+
+</html>
